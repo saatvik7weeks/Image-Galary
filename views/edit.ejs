@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Karo</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+      <a href="/read"> <b> Read</b></a>
+    <h1 style = "color: aliceblue;">Edit user</h1>
+    <hr>
+    <form action="/update/<%= users._id %>" method="post">
+    <input type ="text" placeholder="name" name="name" value="<%= users.username %>" required>
+    <input type ="text" placeholder="email" name="email" value="<%= users.email %>" required>
+    <input type ="text" placeholder="URL" name="image" value="<%= users.imageurl %>" required>
+    <input style="width: 100px; background-color: yellow;"  id = "sub" type="submit" value="Update User" >
+     </form>
+</body>
+</html>

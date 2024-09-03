@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+input{
+    border-radius:5px ;
+    width: 300px;
+    height: 20px;
+    font-weight: bold;
+}
+#sub{
+    background-color: brown;
+}
+.main{
+    background-color: white;
+    height: 290px;
+    width: 220px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.child{
+   
+    height: 150px;
+    width: 190px; 
+    margin-left: 5px; 
+   
+    
+}

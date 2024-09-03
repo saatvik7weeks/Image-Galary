@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Library</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <a href="/"> <b> Back</b></a>
+    <h1 style = "color: aliceblue;">All Users</h1>
+    <hr>
+
+    <div class="users" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px; width: 90%; margin-left: 100px;">
+      <% users.forEach((user) => { %>
+        <div class="main">
+          <img style="object-fit: contain;" src="<%= user.imageurl%>" class="child">
+            
+          
+          <h3><%= user.username %></h3> <!-- Assuming 'username' is the correct key -->
+          <h4><%= user.email %></h4>
+          <div style="display: flex; gap: 29px;">
+            <a href="/edit/<%= user._id %>" style="color: red; text-decoration: none;">Edit User</a>
+            <a href="/delete/<%= user._id %>" style="color: red; text-decoration: none;">Delete User</a>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    
+    
+    <!-- <div class="users" style="display: flex; flex-wrap:wrap ; gap: 30px; margin-top: 30px; width: 90%; margin-left: 100px; " >
+    <div  class="main">
+        <div class="child">
+        </div>
+        <h3>saatvik suvrant</h3>
+        <h4>rishabpanda779@gmail.com</h4>
+        <div style="display: flex; gap: 29px; ">
+        <a href="" style=" color: red;text-decoration: none;  " > Edit User </a>
+        <a href="" style="color: red; text-decoration: none;"> Delete User </a>
+        </div>
+      </div> -->
+    
+   
+   
+
+    </div>
+   
+    
+</body>
+</html>
